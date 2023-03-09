@@ -6,6 +6,7 @@ import PageNotFound from './pages/PageNotFound';
 import Detail from './pages/User/Detail';
 import Login from './pages/User/Login'
 import Register from './pages/User/Register';
+import InforUser from './pages/User/InforUser';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='detail/:id' element={<Detail />} />
         <Route path='login' element={<Login />} />
         <Route path='register' element={<Register />} />
+        <Route path='inforUser' element={<InforUser />} />
 
            </Route>
       </Routes>

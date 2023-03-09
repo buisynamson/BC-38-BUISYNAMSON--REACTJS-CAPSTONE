@@ -62,7 +62,7 @@ export default function Login() {
     const handleSubmit = (e) => {
         e.preventDefault()
         let { taiKhoan, matKhau } = state.nguoiDung
-        if (taiKhoan !== '' && matKhau !== '' && state.isValid == true) {
+        if (taiKhoan !== '' && matKhau !== '' && state.isValid === true) {
             callApiLogin(state.nguoiDung)
         } else {
             SwalConfig('Vui lòng điền đầy đủ thông tin', 'info', false)

@@ -4,7 +4,7 @@
         error[name] = ''
         return true;
     }
-    error[name] = `${title} không được rỗng !!`;
+    error[name] = `${title} không được để trống !!`;
     return false
 }
 const kiemTraDinhDang = (value, error, name, title, regex, mess) => {
@@ -22,8 +22,8 @@ const kiemTraDoDai = (value, error, name, title, min, max) => {
         return true;
     }
     
-    if(min == max){
-        error[name] = `${title} phải đủ ${min} ký tự !!`;
+    if(min === max){
+        error[name] = `${title} phải từ ${min} ký tự !!`;
     }
     else {
         error[name] = `${title} phải từ ${min} đến ${max} ký tự !!`;
