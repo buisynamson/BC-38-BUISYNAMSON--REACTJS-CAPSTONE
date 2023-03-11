@@ -42,9 +42,9 @@ const ThongTinNguoiDung = (thongTinNguoiDung) =>{
 }
 
 const KetQuaDatVe =(thongTinNguoiDung) => {
-    const renderTicketItem =() => {
+    const renderTicketItem = () => {
         return thongTinNguoiDung.thongTinDatVe?.map((item,index) => {
-            return <div key={index} className='p-2 lg: w-1/3 md:w-1/2 w-full'>
+            return <div key={index} className='p-2 lg:w-1/3 md:w-1/2 w-full'>
                 <div className="h-full flex items-center border-gray-200 border p-4">
                 <img src={item.hinhAnh} alt='team' className="w-16 h-16 bg-gray-100 object-cover object-center  "/>
                 <div className="flex-grow">

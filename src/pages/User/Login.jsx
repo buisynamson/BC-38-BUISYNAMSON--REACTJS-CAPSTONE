@@ -50,7 +50,7 @@ export default function Login() {
             isValid &= kiemTraRong(value, err, name, title) && kiemTraDinhDang(value, err, name, title, /^\S*$/, 'không được có khoảng cách')
         }
 
-        if (name == 'matKhau') {
+        if (name === 'matKhau') {
             isValid &= kiemTraRong(value, err, name, title) && kiemTraDoDai(value, err, name, title, 6, 50)
         }
 
