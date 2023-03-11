@@ -125,8 +125,8 @@ export default () => {
               <nav style={{borderBottom: '1px solid #c1c0c04a'}} id='navBarHeader' className="transition-all duration-500 flex items-center justify-between flex-wrap bg-white py-2 px-4 fixed w-full z-10 top-0">
                   <div className="flex items-center flex-shrink-0 text-white mr-4">
                       <NavLink to='/' aria-label="Back to homepage" className="flex items-center">
-                      <img src='https://cdn.iconscout.com/icon/free/png-256/cinema-film-video-clip-movie-multimedia-short-1-18284.png' alt='logo'style={{width:100}}/>
-                          <span className='text-xl font-medium text-orange-500 sm:text-2xl '>Movie Capstone</span>
+                      <img  src='https://cdn.iconscout.com/icon/free/png-256/cinema-film-video-clip-movie-multimedia-short-1-18284.png' alt='logo'style={{width:80}}/>
+                          <span className='text-xl font-medium text-orange-500 sm:text-2xl mx-3'>Movie Capstone</span>
                       </NavLink>
                   </div>
                   <div className="block lg:hidden">
