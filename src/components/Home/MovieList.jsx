@@ -48,7 +48,7 @@ export default function MovieList(props) {
       />
 
       {/* Mobile */}
-      {/* <div className="block mt-16 sm:mt-8 md:mt-0 md:hidden">
+      <div className="block mt-16 sm:mt-8 md:mt-0 md:hidden">
         <div className="relative mb-4">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 ">
             <svg
@@ -115,7 +115,7 @@ export default function MovieList(props) {
               </div>
             ))}
         </div>
-      </div> */}
+      </div>
 
       <div className="block mt-5 ">
         <div className="relative mb-4">

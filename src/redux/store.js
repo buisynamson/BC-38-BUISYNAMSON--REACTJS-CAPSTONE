@@ -11,7 +11,7 @@ export const store = configureStore({
         UserReducer,
         FilmReducer,
         CinemaReducer,
-        BookingReducer
+        BookingReducer,
     }
 })
 

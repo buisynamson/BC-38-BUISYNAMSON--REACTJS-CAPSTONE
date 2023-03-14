@@ -8,7 +8,7 @@ export const DangNhap = userLogin => https.post('/QuanLyNguoiDung/DangNhap', use
 
 export const DangKy = userRegister => https.post('/QuanLyNguoiDung/DangKy', userRegister)
 
-export const LayDanhSachNguoiDung = () => https.get(`/QuanLyNguoiDung/LayDanhSachNguoiDung?MaNhom=GP00`)
+export const LayDanhSachNguoiDung = () => https.get(`/QuanLyNguoiDung/LayDanhSachNguoiDung?MaNhom=GP01`)
 
 export const XoaNguoiDung = (taiKhoan) => https.delete(`/QuanLyNguoiDung/XoaNguoiDung?taiKhoan=${taiKhoan}`)
 

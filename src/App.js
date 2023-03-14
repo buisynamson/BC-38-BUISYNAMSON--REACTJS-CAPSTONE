@@ -7,7 +7,8 @@ import Detail from './pages/User/Detail';
 import Login from './pages/User/Login'
 import Register from './pages/User/Register';
 import InforUser from './pages/User/InforUser';
-import './App.css';
+import BookingTicket from './pages/User/BookingTicket'
+
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='login' element={<Login />} />
         <Route path='register' element={<Register />} />
         <Route path='inforUser' element={<InforUser />} />
+        <Route path='booking/:id' element={<BookingTicket />} />
 
            </Route>
       </Routes>
