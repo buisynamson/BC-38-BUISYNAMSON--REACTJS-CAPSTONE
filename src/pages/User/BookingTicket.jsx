@@ -26,19 +26,19 @@ const BookingTicket = (thongTinNguoiDung, id, setIsLoading) => {
         return danhSachGhe.map((itemGhe, index) => {
             let sizeScreen = window.screen.width
             let size = 16
-            let classGheVip = itemGhe.loaiGhe == 'Vip' ? 'gheVip' : ''
-            let classGheDaDat = itemGhe.daDat == true ? 'gheDaDat' : ''
+            let classGheVip = itemGhe.loaiGhe === 'Vip' ? 'gheVip' : ''
+            let classGheDaDat = itemGhe.daDat === true ? 'gheDaDat' : ''
             let classGheDangDat = ''
             let daDat = itemGhe.daDat ? true : false
 
             // kiểm tra ghế trong danh sách có trùng với ghế trong danh sách ghế đang đặt ko? -> set css cho ghế đang đặt
-            const indexGheDangDat = danhSachGheDangDat.findIndex(itemGheDangDat => itemGheDangDat.maGhe == itemGhe.maGhe)
+            const indexGheDangDat = danhSachGheDangDat.findIndex(itemGheDangDat => itemGheDangDat.maGhe === itemGhe.maGhe)
             if (indexGheDangDat !== -1) {
                 classGheDangDat = 'gheDangDat'
             }
             // kiểm tra taiKhoan của account này có trùng với taiKhoan của ghế nào ko ? -> set css cho ghế dc account này đặt
             let classGheDaDuocTaiKhoanDat = ''
-            if (thongTinNguoiDung.taiKhoan == itemGhe.taiKhoanNguoiDat) {
+            if (thongTinNguoiDung.taiKhoan === itemGhe.taiKhoanNguoiDat) {
                 classGheDaDuocTaiKhoanDat = 'gheDaDuocTaiKhoanNayDat'
             }
             console.log(sizeScreen)
@@ -66,9 +66,9 @@ const BookingTicket = (thongTinNguoiDung, id, setIsLoading) => {
             return <Fragment key={index}>
                 <button disabled={daDat} onClick={() => dispatch(datGhe(itemGhe))}
                     className={`ghe ${classGheVip} ${classGheDaDat} ${classGheDangDat} ${classGheDaDuocTaiKhoanDat}`}>
-                    {itemGhe.daDat ? classGheDaDuocTaiKhoanDat == '' ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faUserTag} /> : itemGhe.stt}
+                    {itemGhe.daDat ? classGheDaDuocTaiKhoanDat === '' ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faUserTag} /> : itemGhe.stt}
                 </button>
-                {(index + 1) % size == 0 ? <br /> : ''}
+                {(index + 1) % size === 0 ? <br /> : ''}
             </Fragment>
         })
     }
@@ -174,7 +174,7 @@ const BookingTicket = (thongTinNguoiDung, id, setIsLoading) => {
                     <hr />
                     <div className='mb-0 cursor-pointer'>
                         <div onClick={() => {
-                            if (danhSachGheDangDat == '') {
+                            if (danhSachGheDangDat === '') {
                                 return SwalConfig('Vui lòng chọn ghế', 'warning', true)
                             }
                             else {

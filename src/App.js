@@ -8,6 +8,10 @@ import Login from './pages/User/Login'
 import Register from './pages/User/Register';
 import InforUser from './pages/User/InforUser';
 import BookingTicket from './pages/User/BookingTicket'
+import News from './pages/User/News';
+import AboutApp from './pages/User/AboutApp';
+
+
 
 
 function App() {
@@ -23,6 +27,8 @@ function App() {
         <Route path='register' element={<Register />} />
         <Route path='inforUser' element={<InforUser />} />
         <Route path='booking/:id' element={<BookingTicket />} />
+        <Route path='news' element={<News />} />
+        <Route path='aboutapp' element={<AboutApp />} />
 
            </Route>
       </Routes>
