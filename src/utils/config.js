@@ -5,20 +5,19 @@ const getLocalStorage = (key) => {
         if(JSON.parse(localStorage.getItem(key))){
             return JSON.parse(localStorage.getItem(key))
         }
-    } catch(err) {
+    } catch (error) {
         removeLocalStorage(key)
         return null
     }
 }
 
 const setLocalStorage = (key, value) => {
-    localStorage.setItem(key, JSON.stringify(value))
+localStorage.setItem(key, JSON.stringify(value))
 }
 
-const removeLocalStorage= (key) =>{
+const removeLocalStorage =(key) => {
     localStorage.removeItem(key)
 }
-
 
 const SwalConfig = (title, icon, showConfirmButton, timer) => {
     return Swal.fire({

@@ -6,7 +6,7 @@ import { Tabs } from "antd";
 import moment from "moment";
 import _ from "lodash";
 
-const ThongTinNguoiDung = (thongTinNguoiDung) =>{
+const thongTinUser = (thongTinNguoiDung) =>{
     return <div className="h-[100vh] relative">
         <section className="p-6 bg-gray-500">
             <h2 className="text-white font-bold text-2xl mb-4">Thông tin tài khoản</h2>
@@ -41,7 +41,7 @@ const ThongTinNguoiDung = (thongTinNguoiDung) =>{
     </div>
 }
 
-const KetQuaDatVe =(thongTinNguoiDung) => {
+const ketQuaDatVe =(thongTinNguoiDung) => {
     const renderTicketItem = () => {
         return thongTinNguoiDung.thongTinDatVe?.map((item,index) => {
             return <div key={index} className='p-2 lg:w-1/3 md:w-1/2 w-full'>
@@ -83,8 +83,8 @@ export default () => {
         dispatch(callApiThongTinNguoiDung)
     }, [])
     const items = [
-        {label: <span className="text-[11px] sm:text=[14px]">01. THÔNG TIN NGƯỜI DÙNG</span>, key: 1, children: ThongTinNguoiDung(thongTinNguoiDung)},
-        {label: <span className="text-[11px] sm:text=[14px]">02. LỊCH SỬ ĐẶT VÉ</span>, key:2, children: KetQuaDatVe(thongTinNguoiDung)},
+        {label: <span className="text-[11px] sm:text=[14px]">01. THÔNG TIN NGƯỜI DÙNG</span>, key: 1, children: thongTinUser(thongTinNguoiDung)},
+        {label: <span className="text-[11px] sm:text=[14px]">02. LỊCH SỬ ĐẶT VÉ</span>, key:2, children: ketQuaDatVe(thongTinNguoiDung)},
     ];
     return (
         <>

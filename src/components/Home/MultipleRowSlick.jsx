@@ -32,46 +32,46 @@ export default function MultipleRowSlick(props) {
         );
     }
 
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true, 
-    centerPadding: "40px",
-    slideToShow: 4,
-    speed: 500,
-    row: 2,
-    slidesPerRow: 3,
-    slidesToScroll: 1,
-    initialSlide: 2,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1200,
-        setting: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          centerPadding: "0",
-          rows: 2,
-          slidesPerRow: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerPadding: "0",
-            rows: 2,
-            slidesPerRow: 1,
-        }
-    },
-    ],
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "40px",
+        slidesToShow: 4,
+        speed: 500,
+        rows: 2,
+        slidesPerRow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerPadding: "0",
+                    rows: 2,
+                    slidesPerRow: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerPadding: "0",
+                    rows: 2,
+                    slidesPerRow: 1,
+                }
+            },
 
+        ],
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+    };
 
     return (
         <div className='animate__animated animate__fadeInUp animate__fast pb-4'>

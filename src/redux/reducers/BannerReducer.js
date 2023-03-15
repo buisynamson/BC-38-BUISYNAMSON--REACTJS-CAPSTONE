@@ -5,20 +5,21 @@ const initialState = {
   data: [
     {
       maBanner: 1,
-      img: 'https://i.ytimg.com/vi/l0AUy7MVJXk/maxresdefault.jpg',
-      link: "https://www.youtube.com/watch?v=uoKSzOuPcfY",
+      img: 'https://img1.wsimg.com/isteam/ip/d6a3e7a7-e920-4711-bf09-856dd846af78/avengers-endgame-banner.jpg',
+      link: "https://www.youtube.com/watch?v=4sZj4aeYUCA",
     },
 
     {
       maBanner: 2,
-      img: "https://touchcinema.com/storage/slider-app/1440wx600h-1-1617891050.jpg",
-      link: "https://www.youtube.com/watch?v=kBY2k3G6LsM",
+      img: "https://www.venuscinema.vn/uploaded/slideshow/banner-nguoi-kien-rap-phim-venuscinema.jpg",
+      link: "https://www.youtube.com/watch?v=RhsV6wdeR3Y",
+
     },
 
     {
       maBanner: 3,
-      img: "https://www.venuscinema.vn/uploaded/slideshow/banner-nguoi-kien-rap-phim-venuscinema.jpg",
-      link: "https://www.youtube.com/watch?v=RhsV6wdeR3Y",
+      img: "https://images2.thanhnien.vn/528068263637045248/2023/2/11/ovffxtrlathumbnailffxhd-16760785682151893462097.jpg",
+      link: "https://www.youtube.com/watch?v=32RAq6JzY-w",
     },
   ],
   modalData: ''

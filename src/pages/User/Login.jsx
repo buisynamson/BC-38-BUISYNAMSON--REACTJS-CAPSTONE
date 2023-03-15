@@ -79,12 +79,12 @@ export default function Login() {
                         <h2 className='text-xl font-bold'>Đăng Nhập</h2>
                     </div>
                     <div className="form-control">
-                        <input placeholder="none" title='Tài khoản' onChange={HandleChangeInput} type="text" name="taiKhoan" className="form-input" autoComplete='off' />
+                        <input placeholder="none" title='Tài khoản' onChange={handleChangeInput} type="text" name="taiKhoan" className="form-input" autoComplete='off' />
                         <label className="form-label bg-white">Tài khoản</label>
                     </div>
                     <p className='form-err font-medium mb-4 mt-1'>{state.err.taiKhoan}</p>
                     <div className="form-control mt-6">
-                        <input placeholder="none" title='Mật khẩu' onChange={HandleChangeInput} id='matKhau' type="password" name="matKhau" className="form-input" autoComplete='off' />
+                        <input placeholder="none" title='Mật khẩu' onChange={handleChangeInput} id='matKhau' type="password" name="matKhau" className="form-input" autoComplete='off' />
                         <label className="form-label bg-white">Mật khẩu</label>
                     </div>
                     <p className='form-err font-medium mb-4 mt-1'>{state.err.matKhau}</p>

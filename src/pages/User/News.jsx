@@ -9,45 +9,45 @@ export default function News() {
                 <div className='md:w-[50%] p-4'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/tenet-cong-bo-ngay-khoi-chieu-chinh-thuc-tai-viet-nam-15959320391357.png" alt="" />
                     <div>
-                        <h2 className='font-bold text-[15px] my-2'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
+                        <h2 className='font-bold text-[18px] my-2'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
                         <p className='text-justify'>Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra thông báo chính thức về ngày khởi chiếu cho bom tấn TENET tại các thị trường bên ngoài Bắc Mỹ, trong đó có Việt Nam.</p>
                     </div>
                 </div>
                 <div className='md:w-[50%] p-4'>
                     <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/khi-phu-nu-khong-con-o-the-tron-chay-cua-nan-nhan-15943683481617.jpg" alt="" />
                     <div>
-                        <h2 className='font-bold text-[15px] my-2'>Khi phụ nữ không còn ở thế trốn chạy của nạn nhân</h2>
+                        <h2 className='font-bold text-[18px] my-2'>Khi phụ nữ không còn ở thế trốn chạy của nạn nhân</h2>
                         <p className='text-justify'>Là bộ phim tâm lý li kỳ với chủ đề tội phạm, Bằng Chứng Vô Hình mang đến một góc nhìn mới về hình ảnh những người phụ nữ thời hiện đại. Điều đó được thể hiện qua câu chuyện về hai người phụ nữ cùng hợp sức để vạ..</p>
                     </div>
                 </div>
             </div>
             <div className='md:flex'>
                 <div className='p-4 md:w-[33%]'>
-                    <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937528932506.png" alt="" />
-                    <h2 className='font-bold my-2'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
-                    <p>Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra thông báo chính thức về ngày khởi chiếu cho bom tấn TENET tại các thị trường bên ngoài Bắc Mỹ, trong đó có Việt Nam.</p>
+                    <img className='w-full' src="https://cinematone.info/public/gallery/221202131434_TransformersRise-of-the-Beasts-Optimus-Prime_gJCIi.jpg" alt="" />
+                    <h2 className='font-bold my-2'>Thương hiệu 'Transformers' tái xuất</h2>
+                    <p>"Transformers" - một trong số thương hiệu phim thành công nhất của Hollywood - tung trailer phần bảy sau hơn bốn năm vắng bóng.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
-                    <img className='w-full' src="https://s3img.vcdn.vn/123phim/2020/07/dien-vien-dac-biet-cua-bang-chung-vo-hinh-15937518743844.png" alt="" />
-                    <h2 className='font-bold my-2'>TENET công bố ngày khởi chiếu chính thức tại Việt Nam</h2>
-                    <p>Đêm qua theo giờ Việt Nam, hãng phim Warner Bros. đưa ra thông báo chính thức về ngày khởi chiếu cho bom tấn TENET tại các thị trường bên ngoài Bắc Mỹ, trong đó có Việt Nam.</p>
+                    <img className='w-full' src="https://i1-ngoisao.vnecdn.net/2021/03/10/harry-potter-1-2883-1615312091.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=wyBxVxw9CNF7mqBZkZ6PgQ" alt="" />
+                    <h2 className='font-bold my-2'>Loạt phim 'Harry Potter' bất ngờ trở lại rạp chiếu sau 11 năm</h2>
+                    <p>Những tháng cuối cùng của năm 2022, các fan của loạt phim 'Harry Potter' sẽ tiếp tục được trở lại với Hogwarts trong ba phần phim thứ 4, 5 và 6 của loạt phim đình đám này.</p>
                 </div>
                 <div className='p-4 md:w-[33%]'>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/07/pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep-15937498464029.png" alt="" />
-                        <p>Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!</p>
+                        <p className='mx-2'>Pee Nak 2 - Vạn kiếp thiên thu, đi tu không hết nghiệp!</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/07/loat-phim-kinh-di-khong-the-bo-lo-trong-thang-7-15937470779379.png" alt="" />
-                        <p>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!.</p>
+                        <p className='mx-2'>Loạt phim kinh dị không thể bỏ lỡ trong tháng 7!.</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/06/rom-tung-trailer-he-lo-cuoc-song-cua-dan-choi-so-de-15929959532579.jpg" alt="" />
-                        <p>RÒM tung trailer hé lộ cuộc sống của dân chơi số đề</p>
+                        <p className='mx-2'>RÒM tung trailer hé lộ cuộc sống của dân chơi số đề</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/06/antebellum-trailer-cuoi-cung-khong-he-lo-bat-cu-thong-tin-gi-them-15929866818923.jpg" alt="" />
-                        <p>Antebellum - Trailer cuối cùng không hé lộ bất cứ thông tin gì</p>
+                        <p className='mx-2'> Antebellum - Trailer cuối cùng không hé lộ bất cứ thông tin gì</p>
                     </div>
                 </div>
             </div>
@@ -89,15 +89,15 @@ export default function News() {
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/02/review-thang-nam-hanh-phuc-ta-tung-co-buong-bo-chua-bao-gio-la-viec-de-dang-15817967038683.jpg" alt="" />
-                        <p>[Review] Tháng Năm Hạnh Phúc Ta Từng Có - Buông bỏ chưa bao giờ là việc dễ dàng</p>
+                        <p className='mx-2'>[Review] Tháng Năm Hạnh Phúc Ta Từng Có - Buông bỏ chưa bao giờ là việc dễ dàng</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/02/review-sac-dep-doi-tra-huong-giang-ke-chuyen-doi-minh-qua-phim-anh-15817958389162.jpg" alt="" />
-                        <p>[Review] Sắc Đẹp Dối Trá - Hương Giang kể chuyện đời</p>
+                        <p className='mx-2'>[Review] Sắc Đẹp Dối Trá - Hương Giang kể chuyện đời</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2020/02/review-birds-of-prey-15809871977193.jpg" alt="" />
-                        <p>[Review] Birds of Prey - Màn lột xác hoành tráng của Harley Quinn và DC</p>
+                        <p className='mx-2'>[Review] Birds of Prey - Màn lột xác hoành tráng của Harley Quinn và DC</p>
                     </div>
                 </div>
             </div>
@@ -139,15 +139,15 @@ export default function News() {
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2019/04/123phim-ban-la-fan-cung-marvel-15562538560772.jpg" alt="" />
-                        <p>[123Phim] Bạn Là Fan Cứng Marvel?.</p>
+                        <p className='mx-2'>[123Phim] Bạn Là Fan Cứng Marvel?.</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2019/04/galaxy-trang-thi-trai-nghiem-bom-tan-cang-dong-cang-vui-15561704693167.jpg" alt="" />
-                        <p>[Galaxy Tràng Thi] Trải Nghiệm Bom Tấn Càng Đông Càng Vui</p>
+                        <p className='mx-2'>[Galaxy Tràng Thi] Trải Nghiệm Bom Tấn Càng Đông Càng Vui</p>
                     </div>
                     <div className='flex mb-4'>
                         <img className='w-[50px] h-[50px]' src="https://s3img.vcdn.vn/123phim/2019/04/mua-ve-bhd-star-tren-123phim-bang-zalopay-1-000d-ve-15547979641987.jpg" alt="" />
-                        <p>Mua Vé BHD Star Trên 123Phim Bằng ZaloPay: 1.000đ/vé</p>
+                        <p className='mx-2'>Mua Vé BHD Star Trên 123Phim Bằng ZaloPay: 1.000đ/vé</p>
                     </div>
                 </div>
             </div>
