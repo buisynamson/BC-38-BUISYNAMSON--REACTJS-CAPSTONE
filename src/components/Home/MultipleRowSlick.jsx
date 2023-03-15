@@ -1,45 +1,46 @@
-import React from "react";
-import useRoute from "../../hooks/useRoute";
+import React from 'react'
+import { Card } from 'antd';
 import Slider from "react-slick";
-import {Card} from 'antd';
+import useRoute from '../../hooks/useRoute';
+
 
 
 export default function MultipleRowSlick(props) {
-  const { navigate } = useRoute();
+    const {navigate} = useRoute()
 
-  const arrFilm = [...props.arrFilm];
+    const arrFilm = [...props.arrFilm]
 
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, background: "transparent" }}
-        onClick={onClick}
-      />
-    );
-  }
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, background: "transparent" }}
+                onClick={onClick}
+            />
+        );
+    }
 
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, background: "transparent" }}
-        onClick={onClick}
-      />
-    );
-  }
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (    
+            <div
+                className={className}
+                style={{ ...style, background: "transparent" }}
+                onClick={onClick}
+            />
+        );
+    }
 
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true, 
     centerPadding: "40px",
-    slideToShow: 3,
+    slideToShow: 4,
     speed: 500,
     row: 2,
-    slidesPerRow:3,
+    slidesPerRow: 3,
     slidesToScroll: 1,
     initialSlide: 2,
     dots: false,
@@ -72,34 +73,29 @@ export default function MultipleRowSlick(props) {
   };
 
 
-  return (
-    <div className='animate__animated animate__fadeInUp animate__fast pb-4'>
-        <Slider {...settings}>
-            {arrFilm?.filter(item => item.sapChieu === props.status).map((film, index) =>
-                <Card className='slick-card' bordered={false} key={index}>
-                    <div className="flip-card">
-                        <div className="flip-card-inner">
-                            <div className="flip-card-front">
-                                <img src={film.hinhAnh} className='w-full h-full' alt={film.hinhAnh} onError={(e) => { e.target.onerror = null; e.target.src = 'https://picsum.photos/75/75' }}/>
-                            </div>
-                            <div className="flip-card-back">
-                                <div className='overlay-card-back'></div>
-                                <img src={film.hinhAnh} className='w-full h-full' alt={film.hinhAnh} onError={(e) => { e.target.onerror = null; e.target.src = 'https://picsum.photos/75/75' }} />
-                                <button onClick={()=> navigate(`detail/${film.maPhim}`)} className='btn-card text-base uppercase'>Mua Vé</button>
+    return (
+        <div className='animate__animated animate__fadeInUp animate__fast pb-4'>
+            <Slider {...settings}>
+                {arrFilm?.filter(item => item.sapChieu === props.status).map((film, index) =>
+                    <Card className='slick-card' bordered={false} key={index}>
+                        <div className="flip-card">
+                            <div className="flip-card-inner">
+                                <div className="flip-card-front">
+                                    <img src={film.hinhAnh} className='w-full h-full' alt={film.hinhAnh} onError={(e) => { e.target.onerror = null; e.target.src = 'https://picsum.photos/75/75' }}/>
+                                </div>
+                                <div className="flip-card-back">
+                                    <div className='overlay-card-back'></div>
+                                    <img src={film.hinhAnh} className='w-full h-full' alt={film.hinhAnh} onError={(e) => { e.target.onerror = null; e.target.src = 'https://picsum.photos/75/75' }} />
+                                    <button onClick={()=> navigate(`detail/${film.maPhim}`)} className='btn-card text-base uppercase'>Mua Vé</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <h2 className='film-name-card mt-3 uppercase font-medium'>{
-                        film.tenPhim.length > 26 ? film.tenPhim.slice(0, 26) + '...' : film.tenPhim
-                    }</h2>
-                </Card>
-            )}
-        </Slider>
-    </div>
-)
+                        <h2 className='film-name-card mt-3 uppercase font-medium'>{
+                            film.tenPhim.length > 26 ? film.tenPhim.slice(0, 26) + '...' : film.tenPhim
+                        }</h2>
+                    </Card>
+                )}
+            </Slider>
+        </div>
+    )
 }
-
-
-
-
-
