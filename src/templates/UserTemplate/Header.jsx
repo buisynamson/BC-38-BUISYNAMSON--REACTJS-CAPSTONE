@@ -126,7 +126,7 @@ export default () => {
                   <div className="flex items-center flex-shrink-0 text-white mr-4">
                       <NavLink to='/' aria-label="Back to homepage" className="flex items-center">
                       <img  src='https://cdn.iconscout.com/icon/free/png-256/cinema-film-video-clip-movie-multimedia-short-1-18284.png' alt='logo'style={{width:80}}/>
-                          <span className='text-xl font-medium text-orange-500 sm:text-2xl mx-3'>Movie Capstone</span>
+                          <span className='text-xl font-medium text-orange-500 sm:text-3xl mx-3'>Movie Capstone</span>
                       </NavLink>
                   </div>
                   <div className="block lg:hidden">
@@ -142,19 +142,27 @@ export default () => {
                       id="nav-content">
                       <ul className="list-reset lg:flex justify-center flex-1 items-center mb-0">
                           <li className="mr-3">
-                              <Link to='/#movie-list' className="inline-block py-2 px-4 text-black font-medium md:text-base hover:text-red-600 no-underline" >Phim</Link>
+                              <Link to='/#movie-list' className="inline-block py-2 px-4 text-black font-medium md:text-base" >
+                              <button className='p-2 hover:bg-orange-500 hover:text-white rounded-md font-semibold tracking-wide h-[2.5rem]'> PHIM </button>
+                              </Link>
                           </li>
                           <li className="mr-3">
-                              <Link className="inline-block no-underline text-black font-medium md:text-base hover:text-red-600 hover:text-underline py-2 px-4"
-                                  to="/#menuCinema">Cụm rạp</Link>
+                              <Link className="inline-block no-underline text-black font-medium md:text-base  py-2 px-4"
+                                  to="/#menuCinema">
+                                    <button className='p-2 hover:bg-orange-500 hover:text-white rounded-md font-semibold tracking-wide h-[2.5rem]'> RẠP </button>
+                                  </Link>
                           </li>
                           <li className="mr-3">
-                              <NavLink className="inline-block no-underline text-black font-medium md:text-base hover:text-red-600 hover:text-underline py-2 px-4"
-                                  to='news'>Tin tức</NavLink>
+                              <NavLink className="inline-block no-underline text-black font-medium md:text-base py-2 px-4"
+                                  to='news'>
+                                    <button className='p-2 hover:bg-orange-500 hover:text-white rounded-md font-semibold tracking-wide h-[2.5rem]'> TIN TỨC </button>
+                                  </NavLink>
                           </li>
                           <li className="mr-3">
-                              <NavLink className="inline-block no-underline text-black font-medium md:text-base hover:text-red-600 hover:text-underline py-2 px-4"
-                                  to='aboutapp'>Ứng dụng</NavLink>
+                              <NavLink className="inline-block no-underline text-black font-medium md:text-base  py-2 px-4"
+                                  to='aboutapp'>
+                                    <button className='p-2 hover:bg-orange-500 hover:text-white rounded-md font-semibold tracking-wide h-[2.5rem]'> ỨNG DỤNG </button>
+                                  </NavLink>
                           </li>
                       </ul>
                       <div className='flex text-gray-500'>
