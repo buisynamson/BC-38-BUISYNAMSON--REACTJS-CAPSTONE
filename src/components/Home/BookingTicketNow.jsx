@@ -75,27 +75,27 @@ export default function BookingTicketNow(props) {
         }
     }
     return (
-        <div className=' bg-white rounded-lg shadow-2xl text-white py-7 px-8 w-full xl:w-3/4 mx-auto translate-y-[-50%] hidden md:block'>
+        <div className=' bg-orange-400 rounded-lg shadow-2xl text-white py-7 px-8 w-full xl:w-3/4 mx-auto translate-y-[-50%] hidden md:block'>
             <form onSubmit={handleOnSubmit} className="grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-7 gap-2">
-                <select name='phimDangChon' onChange={handleChange} className='text-black border-2 rounded-md border-slate-600 cursor-pointer 2xl:col-span-2 h-[2.5rem]'>
-                    <option defaultValue='Phim'>Phim</option>
-                    {state.danhSachDuLieu.phim?.map((item, index) => <option key={index} value={item.maPhim}>{item.tenPhim}</option>)}
+                <select name='phimDangChon' onChange={handleChange} className='text-black font-bold border-2 rounded-md border-slate-600 cursor-pointer 2xl:col-span-2 h-[2.5rem]'>
+                    <option defaultValue='Phim'>Chọn Phim</option>
+                    {state.danhSachDuLieu.phim?.map((item, index) => <option className='italic font-bold' key={index} value={item.maPhim}>{item.tenPhim}</option>)}
                 </select>
 
-                <select name='rapDangChon' onChange={handleChange} className='text-black border-2 rounded-md border-slate-600 cursor-pointer 2xl:col-span-2 h-[2.5rem]'>
-                    <option defaultValue='Rạp'>Rạp</option>
+                <select name='rapDangChon' onChange={handleChange} className='text-black font-bold border-2 rounded-md border-slate-600 cursor-pointer 2xl:col-span-2 h-[2.5rem]'>
+                    <option defaultValue='Rạp'>Chọn Rạp</option>
                     {state.danhSachDuLieu.rap?.map((item, index) => {
                         return <option key={index} value={JSON.stringify(item.lichChieuPhim)}>{item.tenCumRap}</option>
                     })}
                 </select>
 
-                <select name='lichChieuDangChon' onChange={handleChange} id='maLichChieuPhim' className='text-black border-2 rounded-md border-slate-600 cursor-pointer 2xl:col-span-2 h-[2.5rem]'>
+                <select name='lichChieuDangChon' onChange={handleChange} id='maLichChieuPhim' className='text-black font-bold border-2 rounded-md border-slate-600 cursor-pointer 2xl:col-span-2 h-[2.5rem]'>
                     <option defaultValue='Ngày giờ chiếu' >Ngày giờ chiếu</option>
                     {state.danhSachDuLieu.lichChieu?.map((item, index) => <option key={index} value={item.maLichChieu}>{moment(item.ngayChieuGioChieu
                     ).format('DD-MM-YYYY ~ hh:mm A')}</option>)}
                 </select>
 
-                <button className='p-2 bg-orange-400 rounded-md font-semibold tracking-wide h-[2.5rem]'>Đặt Vé Nhanh</button>
+                <button className='p-2 bg-cyan-500 rounded-md font-semibold tracking-wide h-[2.5rem]'>Đặt Vé Nhanh</button>
             </form>
         </div>
     )

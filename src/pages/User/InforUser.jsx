@@ -49,7 +49,7 @@ const ketQuaDatVe =(thongTinNguoiDung) => {
                 <img src={item.hinhAnh} alt='team' className="w-16 h-16 bg-gray-100 object-cover object-center  "/>
                 <div className="flex-grow">
                     <h2>{item.tenPhim}</h2>
-                    <h2>{_.first(item.danhSachGhe).tenHeThongRap} - {_.first.apply(item.danhSachGhe).tenCumRap}</h2>
+                    {/* <h2>{_.first(item.danhSachGhe).tenHeThongRap} - {_.first.apply(item.danhSachGhe).tenCumRap}</h2> */}
                     <p className="text-gray-500">Ngày đặt: {moment(item.ngayDat).format('DD-MM-YYYY ~ hh:MM:A')}</p>
                     <p className="text-gray-500">Thời lượng: {item.thoiLuongPhim} phút</p>
                     <p>Ghế: {item.danhSachGhe.map((ghe,iGhe)=>{

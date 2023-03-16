@@ -33,7 +33,7 @@ export default function MenuCinema(props) {
                         <h2 className='font-bold text-left mb-2 text-sm uppercase'><span className='bg-red-600 p-1 rounded-md text-white text-sm'>{itemPhim.hot === true ? "C18" : "C16"}</span> {itemPhim.tenPhim}</h2>
                         <div className='grid grid-cols-2 gap-1'>
                             {itemPhim.lstLichChieuTheoPhim?.slice(0, 4).map((itemLichChieu, indexNgayChieu) =>
-                                <button onClick={() => navigate(`booking/${itemLichChieu.maLichChieu}`)} key={indexNgayChieu} className="bg-gray-100 hover:bg-gray-300 border-2 text-white font-bold py-2 px-4 rounded">
+                                <button onClick={() => navigate(`booking/${itemLichChieu.maLichChieu}`)} key={indexNgayChieu} className="bg-slate-900 hover:bg-gray-300 border-2 text-white font-bold py-2 px-4 rounded">
                                     <span className='text-green-500'>
                                         {moment(itemLichChieu.ngayChieuGioChieu).format("DD-MM-YYYY ~ ")}
                                     </span>
@@ -82,7 +82,7 @@ export default function MenuCinema(props) {
     }
 
     return <>
-        {heThongRapChieu.length ? <div id='menuCinema' className='MenuCinemaTabs hidden lg:block my-8'>
+        {heThongRapChieu.length ? <div id='menuCinema' className='MenuCinemaTabs hidden container lg:block my-8'>
             <Tabs
                 className='shadow-xl pt-3'
                 tabPosition='left'
