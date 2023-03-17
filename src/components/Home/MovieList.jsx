@@ -30,8 +30,8 @@ export default function MovieList(props) {
             {/* Laptop */}
             <BookingTicketNow arrFilm={arrFilm}/>
             <Tabs className='hidden md:block' defaultActiveKey="1" items={[
-                { label: 'Phim đang chiếu', key: '1', children: <MultipleRowSlick status={false} arrFilm={arrFilm} /> },
-                { label: 'Phim sắp chiếu', key: '2', children: <MultipleRowSlick status={true} arrFilm={arrFilm} /> },
+                { label: 'Phim đang chiếu', key: '1', children: <MultipleRowSlick status={true} arrFilm={arrFilm} /> },
+                { label: 'Phim sắp chiếu', key: '2', children: <MultipleRowSlick status={false} arrFilm={arrFilm} /> },
             ]} />
 
             {/* Mobile */}

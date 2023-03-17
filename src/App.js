@@ -10,6 +10,7 @@ import InforUser from './pages/User/InforUser';
 import BookingTicket from './pages/User/BookingTicket'
 import News from './pages/User/News';
 import AboutApp from './pages/User/AboutApp';
+import AdminTemplate from './templates/AdminTemplate/AdminTemplate';
 
 
 
@@ -29,6 +30,8 @@ function App() {
         <Route path='booking/:id' element={<BookingTicket />} />
         <Route path='news' element={<News />} />
         <Route path='aboutapp' element={<AboutApp />} />
+
+        <Route path='/admin' element={<AdminTemplate />}></Route>
 
            </Route>
       </Routes>
