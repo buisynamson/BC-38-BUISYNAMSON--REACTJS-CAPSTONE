@@ -10,7 +10,9 @@ export default function AboutApp() {
                     <h2 className='text-white uppercase text-[30px] font-bold'>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h2>
                     <p className='text-[20px] font-medium my-4'>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
                     <div className='text-center'>
-                        <button className='uppercase py-4 px-8 bg-red-600 font-semibold tracking-wider rounded-lg'>App miễn phí - tải về ngay</button>
+                        <button className='uppercase py-4 px-8 bg-red-600 font-semibold tracking-wider rounded-lg hover:bg-orange-400'>
+                            <a href= 'https://play.google.com/store/apps/details?id=vn.com.lottecinema.android&hl=vi&gl=US' target= '_blank'> App miễn phí - tải về ngay</a>
+                            </button>
                     </div>
                 </div>
             </div>

@@ -108,7 +108,7 @@ export default () => {
                 <Form.Item label="Hot" valuePropName="checked">
                     <Switch onChange={handleChangeSwitch('hot')} />
                 </Form.Item>
-                <Form.Item label="Số sao">
+                <Form.Item label="Số điểm">
                     <InputNumber onChange={value => formik.setFieldValue('danhGia', value)} min={1} max={10} />
                 </Form.Item>
                 <Form.Item label="Hình ảnh">

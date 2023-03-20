@@ -24,7 +24,6 @@ import EditFilm from './pages/Admin/Film/EditFilm';
 import AddNewUser from './pages/Admin/Users/AddNewUser';
 import EditUser from './pages/Admin/Users/EditUser';
 
-
 function App() {
   return (
     <HistoryRouter history={history}>
@@ -39,9 +38,9 @@ function App() {
           <Route path="inforUser" element={<InforUser />} />
           <Route path="booking/:id" element={<BookingTicket />} />
           <Route path="news" element={<News />} />
-          <Route path="aboutapp" element={<AboutApp />} />
+          <Route path="aboutapp" element={<AboutApp />} /> </Route>
 
-          <Route path="/admin" element={<AdminTemplate />}></Route>
+          <Route path="/admin" element={<AdminTemplate />}>
           <Route path="/admin" index element={<Dashboard />} />
           <Route path="user" element={<Users />} />
           <Route path="user/addnewuser" element={<AddNewUser />} />
@@ -56,5 +55,4 @@ function App() {
     </HistoryRouter>
   );
 }
-
 export default App;

@@ -21,20 +21,20 @@ export default function AdminTemplate() {
             navigate('/login')
         }
         else if (token.maLoaiNguoiDung !== 'QuanTri') {
-            navigate('/notfound')
+            navigate('/pagenotfound')
         }
         else {
             const callApiThongTinNguoiDungCheckAdmin = async () => {
                 try {
                     const apiNguoiDung = await LayThongTinTaiKhoan()
                     if (apiNguoiDung.data.content.maLoaiNguoiDung !== token.maLoaiNguoiDung) {
-                        navigate('/notfound')
+                        navigate('/pagenotfound')
                     }else {
                         setIsLoading(false)
                     }
                 } catch (error) {
                     removeLocalStorage(LOCALSTORAGE_USER)
-                    navigate('/notfound')
+                    navigate('/pagenotfound')
                 }
             }
             callApiThongTinNguoiDungCheckAdmin()

@@ -122,11 +122,11 @@ export default function Film() {
     return <div className='adminFilm'>
         <h2 className='text-2xl uppercase font-bold mb-4'>Quản lý Phim</h2>
 
-        <Button onClick={() => navigate('/admin/film/addnewfilm')} className='mb-4 font-semibold border-black'>Thêm phim</Button>
+        <Button onClick={() => navigate('/admin/film/addnewfilm')} className='mb-4 font-semibold border-black' >Thêm phim</Button>
 
         <Search
             className='mb-4'
-            placeholder="Tìm kiếm theo tên"
+            placeholder="Tìm phim..."
             enterButton='Search'
             size="large"
             onSearch={searchKeyword}
