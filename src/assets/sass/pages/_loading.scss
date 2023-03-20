@@ -1,0 +1,14 @@
+.loading {
+    background-image: url('../../img/loading.gif');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include responsive('sm'){
+        height: 50vh;
+    }
+    @include responsive('md'){
+        height: 60vh;
+    }
+}
