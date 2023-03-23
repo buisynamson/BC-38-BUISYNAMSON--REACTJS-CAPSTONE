@@ -1,6 +1,6 @@
 import React from "react";
 import { getLocalStorage } from "../../utils/config";
-import Users from './Users/Users'
+// import Users from './Users/Users'
 
 
 export default function Dashboard() {
@@ -178,7 +178,9 @@ export default function Dashboard() {
 						<path fill="#000000" d="M90.7,33.2c0.2,0.5,0,1.1-0.5,1.3c-0.5,0.2-1.1-0.1-1.3-0.6c-0.2-0.5,0-1.1,0.5-1.3C89.9,32.4,90.5,32.7,90.7,33.2z" />
 					</g>
 				</svg> */}
-				<Users />
+				{/* <Users /> */}
+				<h3>Quyền của Admin</h3>
+				<p> Chỉnh sửa, thêm người dùng</p>
       </div>
     </>
   );
