@@ -4,6 +4,7 @@ import { faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import { faSquareFacebook, faYoutube, faInstagram, faGooglePlay, faApple } from '@fortawesome/free-brands-svg-icons'
 import { NavLink } from 'react-router-dom'
 
+
 export default function Footer() {
     return (
         <footer className="px-4 divide-y bg-neutral-900 text-gray-100">
@@ -12,6 +13,7 @@ export default function Footer() {
                     <NavLink to='/' aria-label="Back to homepage" className="flex items-center">
                         <div className='text-xl font-medium text-orange-500 sm:text-2xl '>Movie Capstone</div>
                     </NavLink>
+                    <img className='mx-12 my-2' src='https://cdn.iconscout.com/icon/free/png-256/cinema-film-video-clip-movie-multimedia-short-1-18284.png' alt='' style={{width:'4rem'}}/>
                 </div>
                 <div className="grid grid-cols-1 text-sm gap-x-3 gap-y-8 lg:w-3/4 sm:grid-cols-2 lg:grid-cols-4">
                     <div className="hidden sm:block space-y-3">
@@ -21,10 +23,10 @@ export default function Footer() {
                                 <a href="#!" className='text-zinc-300  title-widget-item'><FontAwesomeIcon icon={faAnglesRight} />  VỀ CHÚNG TÔI</a>
                             </li>
                             <li>
-                                <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon icon={faAnglesRight} /> THỎA THUẬN SỬ DỤNG</a> 
+                                <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon icon={faAnglesRight} /> ĐIỀU KHOẢN CHUNG</a> 
                             </li>
                             <li>
-                                <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon icon={faAnglesRight} /> QUY CHẾ BẢO MẬT</a>
+                                <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon icon={faAnglesRight} /> CHÍNH SÁCH THANH TOÁN</a>
                             </li>
                             <li>
                                 <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon icon={faAnglesRight} /> CHÍNH SÁCH BẢO MẬT</a>
