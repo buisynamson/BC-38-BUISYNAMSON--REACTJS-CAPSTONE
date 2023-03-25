@@ -31,23 +31,21 @@ const BookingTicket = (thongTinNguoiDung, id, setIsLoading) => {
             let classGheDangDat = ''
             let daDat = itemGhe.daDat ? true : false
 
-            // kiểm tra ghế trong danh sách có trùng với ghế trong danh sách ghế đang đặt ko? -> set css cho ghế đang đặt
+           
             const indexGheDangDat = danhSachGheDangDat.findIndex(itemGheDangDat => itemGheDangDat.maGhe === itemGhe.maGhe)
             if (indexGheDangDat !== -1) {
                 classGheDangDat = 'gheDangDat'
             }
-            // kiểm tra taiKhoan của account này có trùng với taiKhoan của ghế nào ko ? -> set css cho ghế dc account này đặt
+            
             let classGheDaDuocTaiKhoanDat = ''
             if (thongTinNguoiDung.taiKhoan === itemGhe.taiKhoanNguoiDat) {
                 classGheDaDuocTaiKhoanDat = 'gheDaDuocTaiKhoanNayDat'
             }
             console.log(sizeScreen)
             if( 1092 < sizeScreen && sizeScreen <= 1247){   
-                console.log('con me no') 
                 size = 14
             }
             if( 783 < sizeScreen && sizeScreen <= 1092 ){
-                console.log('con me no') 
                 size = 12
             }
             if( 650 < sizeScreen && sizeScreen <= 783 ){
@@ -75,26 +73,25 @@ const BookingTicket = (thongTinNguoiDung, id, setIsLoading) => {
 
     const callApiDatVe = async () => {
         try {
-            // tạo 1 thongTinDatVe thông qua đối tượng tạo sẵn (gồm maLichChieu và danhSachGhe), do backEnd yêu cầu phải gửi như thế
-            // bên cạnh đó, khi gửi nếu ghế ko có dữ liệu thì vẫn có thông tin, ko bị lỗi ko đáng có
+
             const thongTinDatVe = new ThongTinDatVe()
             thongTinDatVe.maLichChieu = id
             thongTinDatVe.danhSachVe = danhSachGheDangDat
-            // trong lúc pending thì gọi loading page
+            
             setIsLoading(true)
-            // gọi tới service DatVe với tham số là thongTinDatVe
+          
             await DatVe(thongTinDatVe)
-            // hiển thị alert thông báo thành công
-            SwalConfig('Đặt vé thành công', 'success')
-            // xóa các ghế trong danh sách ghế đang đặt
+           
+            SwalConfig('Đặt vé thành công!', 'success')
+         
             dispatch(xoaDanhSachGheDangDat())
-            // đặt vé thành công thì gọi api để load lại phòng vé 
+           
             const result = await LayDanhSachPhongVeService(id)
             dispatch(layDanhSachPhongVe(result.data.content))
-            // load lại lịch sử ghế đã đặt của account này luôn, vì lịch sử đặt dc trả về từ ThongTinTaiKhoan
+           
             const apiNguoiDung = await LayThongTinTaiKhoan()
             dispatch(setUserInfor(apiNguoiDung.data.content))
-            // khi xong hết thì dừng trạng thái loading page
+           
             setIsLoading(false)
         } catch (error) {
             console.log(error)
@@ -121,7 +118,7 @@ const BookingTicket = (thongTinNguoiDung, id, setIsLoading) => {
                                     <th>Ghế thường</th>
                                     <th>Ghế vip</th>
                                     <th>Ghế đang chọn</th>
-                                    <th>Ghế được tài khoản này đặt</th>
+                                    <th>Ghế bạn đã đặt</th>
                                 </tr>
                             </thead>
                             <tbody className='bg-white divide-y divide-gray-200'>

@@ -97,8 +97,7 @@ export const callApiXoaPhim = (maPhim) => async (dispatch) => {
         const result = await xoaPhim (maPhim) 
         dispatch(callApiFilm)
         SwalConfig(result.data.content, 'success', false)
-        history.push('admin/film')
-        
+        history.push('/admin/film')
     } catch(err) {
         SwalConfig(`${err.response.data.content}`, 'error', true, 3000)
     }
