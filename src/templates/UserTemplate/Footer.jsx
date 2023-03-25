@@ -55,7 +55,7 @@ export default function Footer() {
                         <ul className="space-y-3">
                             <li>
                                 <a href="https://www.facebook.com/buisynamson94/" target='_blank' rel="noreferrer" className='text-zinc-300 title-widget-item'><FontAwesomeIcon className='w-8 h-8 md:w-11 md:h-11 mr-3' icon={faSquareFacebook} /></a>
-                                <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon className='w-8 h-8 md:w-11 md:h-11 mr-3' icon={faYoutube} /></a>
+                                <a href="https://www.youtube.com/watch?v=KTSvZcBX9Xw" target='_blank' rel="noreferrer" className='text-zinc-300 title-widget-item'><FontAwesomeIcon className='w-8 h-8 md:w-11 md:h-11 mr-3' icon={faYoutube} /></a>
                                 <a href="#!" className='text-zinc-300 title-widget-item'><FontAwesomeIcon className='w-8 h-8 md:w-11 md:h-11 mr-3' icon={faInstagram} /></a>
                                
                             </li>
